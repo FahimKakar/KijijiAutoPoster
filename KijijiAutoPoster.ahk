@@ -1,9 +1,15 @@
 #Include FindText.ahk
 #Include KijijiInfo.ahk
-
+#Include TimerFunction.ahk
 
 loop {
 Script:
+
+Gui, Font, s18
+Gui, Color, Red
+Gui, Add, Text, w1000,
+Gui, Show, x10 y10 w300 h100, DemoTimer
+
 
 Send {LWin}
 Sleep 1000
@@ -128,4 +134,6 @@ Sleep 5000
 Send {LCtrl Down}
 Send W
 Send {LCtrl Up}
+Timer(0, 10)
 }
+Esc::Pause
