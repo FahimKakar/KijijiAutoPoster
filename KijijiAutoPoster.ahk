@@ -84,10 +84,10 @@ if (ok:=FindText(X:="wait", Y:=3, 0,0,0,0,0,0,Text))
 }
 Sleep 2000
 
-Text:="|<Image URL>*123$21.s07z00zs07z00zs07z00zs07z00zs07z00Ts03z00Ts03z00Ts03z00TU"
+Text:="|<Image URL>*62$52.zzzzzzrzvzzzzzzTzjzzzzzxzyzzzzzzrzvzzzzzzTzjzzzzzxzyzzzUzzrzvzzy3zzTzjzzsDzxzyzzzYrzrzvzzwnDzTzjzznwzxzyzzzDnzrzvzzwzDzTzjzzttzxzyzzzU7zrzvzzzVzzTzjzzzzzxzyzzzzzzrzvzzzzzzTzjzzzzzxzyzzzzzzrzvzzzzzzTzjzzzzzxzyzzzzzzrzu"
 if (ok:=FindText(X:="wait", Y:=3, 0,0,0,0,0,0,Text))
 {
-   FindText().Click(X, Y, "L")
+   FindText().Click(X-150, Y, "L")
 }
 
 SendInput {Raw}%ImageURL%
